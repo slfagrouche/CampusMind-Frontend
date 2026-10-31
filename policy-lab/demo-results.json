@@ -1,0 +1,165 @@
+{
+  "mode": "deterministic_synthetic",
+  "log": [
+    {
+      "sequence": 1,
+      "event_id": "public",
+      "state": {
+        "jurisdiction": "UAE",
+        "records": false,
+        "vendor_approved": false,
+        "secondary_use": false,
+        "withdrawn": false
+      },
+      "review": {
+        "service": {
+          "scope": "public_information"
+        },
+        "privacy": {
+          "status": "informational_only",
+          "reason_codes": []
+        },
+        "evidence": {
+          "citation_ids": [
+            "unesco-education"
+          ]
+        }
+      },
+      "status": "informational_only",
+      "source_digest": "c0527d2250add33097f87142ce088b365338a15a2d81cb7f9d0ed0776538d7ba",
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "6d6d867405e906464425929d15a2a249bc21ff1a48dd6c5ed8fa708566e37315"
+    },
+    {
+      "sequence": 2,
+      "event_id": "records",
+      "state": {
+        "jurisdiction": "UAE",
+        "records": true,
+        "vendor_approved": false,
+        "secondary_use": false,
+        "withdrawn": false
+      },
+      "review": {
+        "service": {
+          "scope": "records_request"
+        },
+        "privacy": {
+          "status": "pause_data_use",
+          "reason_codes": [
+            "student_records_require_review",
+            "vendor_not_approved"
+          ]
+        },
+        "evidence": {
+          "citation_ids": [
+            "uae-data"
+          ]
+        }
+      },
+      "status": "pause_data_use",
+      "source_digest": "c0527d2250add33097f87142ce088b365338a15a2d81cb7f9d0ed0776538d7ba",
+      "previous_hash": "6d6d867405e906464425929d15a2a249bc21ff1a48dd6c5ed8fa708566e37315",
+      "hash": "f126aae9982d9ee5c4c36be012f05d7848d403ed20596375396c1890db8c249c"
+    },
+    {
+      "sequence": 3,
+      "event_id": "approved",
+      "state": {
+        "jurisdiction": "UAE",
+        "records": true,
+        "vendor_approved": true,
+        "secondary_use": false,
+        "withdrawn": false
+      },
+      "review": {
+        "service": {
+          "scope": "records_request"
+        },
+        "privacy": {
+          "status": "human_review",
+          "reason_codes": [
+            "student_records_require_review"
+          ]
+        },
+        "evidence": {
+          "citation_ids": [
+            "uae-data"
+          ]
+        }
+      },
+      "status": "human_review",
+      "source_digest": "c0527d2250add33097f87142ce088b365338a15a2d81cb7f9d0ed0776538d7ba",
+      "previous_hash": "f126aae9982d9ee5c4c36be012f05d7848d403ed20596375396c1890db8c249c",
+      "hash": "1657f82446a59adbf1b268e22ac8303e79bb35cac2b0d5c4d54c658ae54585bd"
+    },
+    {
+      "sequence": 4,
+      "event_id": "reuse",
+      "state": {
+        "jurisdiction": "UAE",
+        "records": true,
+        "vendor_approved": true,
+        "secondary_use": true,
+        "withdrawn": false
+      },
+      "review": {
+        "service": {
+          "scope": "records_request"
+        },
+        "privacy": {
+          "status": "pause_data_use",
+          "reason_codes": [
+            "student_records_require_review",
+            "secondary_use_requested"
+          ]
+        },
+        "evidence": {
+          "citation_ids": [
+            "uae-data",
+            "unesco-education"
+          ]
+        }
+      },
+      "status": "pause_data_use",
+      "source_digest": "c0527d2250add33097f87142ce088b365338a15a2d81cb7f9d0ed0776538d7ba",
+      "previous_hash": "1657f82446a59adbf1b268e22ac8303e79bb35cac2b0d5c4d54c658ae54585bd",
+      "hash": "b293bfce4f9f1fab242041d7c1050bc6e1efda1f5a025b9cb29bdd750b0db4d5"
+    },
+    {
+      "sequence": 5,
+      "event_id": "withdrawal",
+      "state": {
+        "jurisdiction": "UAE",
+        "records": true,
+        "vendor_approved": true,
+        "secondary_use": true,
+        "withdrawn": true
+      },
+      "review": {
+        "service": {
+          "scope": "records_request"
+        },
+        "privacy": {
+          "status": "pause_data_use",
+          "reason_codes": [
+            "student_records_require_review",
+            "secondary_use_requested",
+            "withdrawal_requires_review"
+          ]
+        },
+        "evidence": {
+          "citation_ids": [
+            "uae-data"
+          ]
+        }
+      },
+      "status": "pause_data_use",
+      "source_digest": "c0527d2250add33097f87142ce088b365338a15a2d81cb7f9d0ed0776538d7ba",
+      "previous_hash": "b293bfce4f9f1fab242041d7c1050bc6e1efda1f5a025b9cb29bdd750b0db4d5",
+      "hash": "5376357df4d530a662e1f46fdbb5c45fec35c3109d0263ca74a577141c347f19"
+    }
+  ],
+  "head_hash": "5376357df4d530a662e1f46fdbb5c45fec35c3109d0263ca74a577141c347f19",
+  "verified": true
+}
